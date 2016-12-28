@@ -1,0 +1,147 @@
+.sidebar{
+	background: linear-gradient(to bottom, #98b7de 4px, #dee8f4 100px, #fff 150px);
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+	font-family: Arial;
+	position: relative;
+	padding-top: 116px;
+	padding-bottom: 15px;
+	&__flag{
+		position: absolute;
+		left: 41px;
+		top: -4px;
+		&:after{
+			content: "";
+			background: url('../../img/blue-flag.png') no-repeat;
+			padding: 4px 69px 73px 0px;
+		}
+		
+	}
+	&__flag svg{
+		width: 24px;
+		height: 20px;
+		position: absolute;
+    left: 12px;
+    top: 18px;
+	}
+	&__comments{
+		padding-left: 42px;
+		padding-right: 31px;
+	}
+	&__characters{
+		margin-top:  30px;
+	}
+	&__networks{
+		margin-top: 30px;
+	}
+}
+
+
+.comments-block{
+
+	margin-bottom: 30px;
+	& a{
+		color: #000;
+	&:hover{
+		text-decoration: none;
+		color: #000;
+	}
+	}
+	&__username{ 
+		font-size: 18px;
+		font-weight: 700;
+		display: block;
+
+	}
+	&__description{
+		font-weight: 400;
+		font-size: 18px;
+		display: block;
+	}
+	&__time{
+		color: #a1a1a1;
+		font-size: 14px;
+		float: right;
+	}
+	&__time svg{
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+	}
+
+}
+
+.characters-block{
+	position: relative;
+	padding-top: 77px;
+	&__button-hide{
+		height: 60px;
+		background: url("../../img/characters-button.png") no-repeat 22px 0px, linear-gradient(to right, #225292 0%, #a0b6d1 36%, #fff 92%);
+		width: 100%;
+    left: -4px;
+    top: 0;
+    position: absolute;
+		padding-left: 103px;
+    padding-top: 7px;
+    font-size: 31px;
+    font-weight: 700;
+    color:#fff;
+
+	}
+
+	&__image{
+		position: relative;
+		margin-bottom: 5px;
+		display: block;
+		background-color: #000;
+		font-size: 0;
+	}
+	&__image img{
+		opacity: 0.5;
+		width: 100%;
+	}
+	&__image:hover img{
+			opacity: 1;
+
+	}
+	&__description{
+		position: absolute;
+		left: 40px;
+		font-size: 14px;
+		font-weight: 700;
+		color: #fff;
+		line-height: 25px;
+	}
+}
+
+
+.networks-block{
+	text-align: center;
+	&__item{
+		display: inline-block;
+		margin: 0 10px;
+	}
+	&__item svg{
+		width: 20px;
+		height: 20px;
+		opacity: 0.5;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	&__vk svg{
+		width: 26px;
+		height: 19px;
+	}
+	&__twitter svg{
+		width: 22px;
+		height: 18px;
+	}
+	&__twitch svg{
+		width: 22px;
+		height: 23px;
+	}
+	&__youtube svg{
+		width: 28px;
+		height: 29px;
+	}
+}

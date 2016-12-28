@@ -1,0 +1,100 @@
+.sidebar
+	.sidebar__flag
+		svg
+				use(xlink:href="#comments") 
+	.sidebar__comments
+		- for(var i = 0; i< 6; i++){
+			.comments-block
+				a(href="#")
+					span.comments-block__username UserName
+					span.comments-block__description Тема новости/топика
+					span.comments-block__time
+						svg
+							use(xlink:href="#arrow") 
+						span 12-июл-2016
+					.clearfix
+		- }
+	.sidebar__characters.characters-block
+		.characters-block__button-hide v
+		.characters-block__images
+			a(href="#").characters-block__image
+				img(src="../../img/characters/genji.png").
+				span.characters-block__description Гендзи
+			a(href="#").characters-block__image
+				img(src="../../img/characters/mcree.png").
+				span.characters-block__description Маккри
+			a(href="#").characters-block__image
+				img(src="../../img/characters/fara.png").
+				span.characters-block__description Фара
+			a(href="#").characters-block__image
+				img(src="../../img/characters/Reaper.png").
+				span.characters-block__description Жнец
+			a(href="#").characters-block__image
+				img(src="../../img/characters/soldier-76.png").
+				span.characters-block__description Солдат 76
+			a(href="#").characters-block__image
+				img(src="../../img/characters/tracer.png").
+				span.characters-block__description Трейсер
+			a(href="#").characters-block__image
+				img(src="../../img/characters/bastion.png").
+				span.characters-block__description Бастион
+			a(href="#").characters-block__image
+				img(src="../../img/characters/hanzo.png").
+				span.characters-block__description Ханзо
+			a(href="#").characters-block__image
+				img(src="../../img/characters/krysavchik.png").
+				span.characters-block__description Крысавчик
+			a(href="#").characters-block__image
+				img(src="../../img/characters/mei.png").
+				span.characters-block__description Мэй
+			a(href="#").characters-block__image
+				img(src="../../img/characters/torbjorn.png").
+				span.characters-block__description Торбьерн
+			a(href="#").characters-block__image
+				img(src="../../img/characters/Vdova.png").
+				span.characters-block__description Вдова
+			a(href="#").characters-block__image
+				img(src="../../img/characters/diva.png").
+				span.characters-block__description Дива
+			a(href="#").characters-block__image
+				img(src="../../img/characters/reinhardt.png").
+				span.characters-block__description Рейнхардт
+			a(href="#").characters-block__image
+				img(src="../../img/characters/turbo.png").
+				span.characters-block__description Турбосвин
+			a(href="#").characters-block__image
+				img(src="../../img/characters/winston.png").
+				span.characters-block__description Винстон
+			a(href="#").characters-block__image
+				img(src="../../img/characters/zarya.png").
+				span.characters-block__description Заря
+			a(href="#").characters-block__image
+				img(src="../../img/characters/ana.png").
+				span.characters-block__description Ана
+			a(href="#").characters-block__image
+				img(src="../../img/characters/lucio.png").
+				span.characters-block__description Люцио
+			a(href="#").characters-block__image
+				img(src="../../img/characters/angel.png").
+				span.characters-block__description Ангел
+			a(href="#").characters-block__image
+				img(src="../../img/characters/simmetry.png").
+				span.characters-block__description Симметра
+			a(href="#").characters-block__image
+				img(src="../../img/characters/zenyatta.png").
+				span.characters-block__description Зеньятa
+
+	.sidebar__networks.networks-block
+		.networks-block__item.networks-block__vk
+			svg
+				use(xlink:href="#vk")
+		.networks-block__item.networks-block__youtube
+			svg
+				use(xlink:href="#youtube") 
+		.networks-block__item.networks-block__twitch
+			svg
+				use(xlink:href="#twitch")
+		.networks-block__item.networks-block__twitter
+			svg
+				use(xlink:href="#twitter")  
+

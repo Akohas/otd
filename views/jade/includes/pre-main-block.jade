@@ -1,0 +1,38 @@
+.container.pre-main-block
+	.row
+		.col-lg-4.col-md-6.col-sm-6.hidden-xs
+			.pre-main-block__search-block
+				input(type="search" name="search-field" id="search-field" placeholder="Search..." class="pre-main-block__search-field")
+				.pre-main-block__search-label
+					svg
+						use(xlink:href="#search") 
+		.pre-main-block__check-in.col-lg-3.col-md-4.col-sm-6.hidden-xs
+			button.pre-main-block__check-in-button Авторизация
+.container
+	.row
+		div(id="carousel-example-generic" class="carousel slide" data-ride="carousel").col-md-12
+			ol.carousel-indicators
+				li(data-target="#carousel-example-generic" data-slide-to="0" class="active")
+				li(data-target="#carousel-example-generic" data-slide-to="1")
+				li(data-target="#carousel-example-generic" data-slide-to="2")
+			.carousel-inner
+				a(href="#").item.active
+					img(src="../../img/slide.png")
+					.carousel-caption 
+							h1 Трасса 66
+							p Стратегии и тактики на карте "Трасса 66" <br> Преимущества защиты и обороны
+				a(href="#").item
+					img(src="../../img/slide.png")
+					.carousel-caption
+						h1 Трасса 66
+						p Стратегии и тактики на карте "Трасса 66" <br> Преимущества защиты и обороны
+				a(href="#").item
+					img(src="../../img/slide.png")
+					.carousel-caption
+						h1 Трасса 66
+						p Стратегии и тактики на карте "Трасса 66" <br> Преимущества защиты и обороны
+			a(class="left carousel-control" href="#carousel-example-generic" data-slide="prev")
+				span(class="glyphicon glyphicon-chevron-left")
+			a(class="right carousel-control" href="#carousel-example-generic" data-slide="next")
+				span(class="glyphicon glyphicon-chevron-right") 
+  

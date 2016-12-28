@@ -1,0 +1,53 @@
+.news
+	.news__flag
+		svg
+			use(xlink:href="#news")  
+	h1.news__header Последние новости
+	.news__items
+		-for(var i =0; i<3; i++){
+			.news__item 
+				h2.news__item-header Фара: обзор базовых тактик
+				.news__item-image
+					img(src="../../img/news1.png")
+				.news__item-description
+					h4.news__item-description-header Сегодня в статье: 	Фара
+					p.news__item-description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, adipisci sit. Corporis exercitationem dicta accusantium accusamus amet perspiciatis consequatur nulla excepturi rem, quibusdam itaque aut molestiae odio cupiditate inventore. Magni, aperiam officiis, asperiores perferendis ipsa omnis distinctio consequatur saepe, architecto facere veniam! Tempora aperiam id eligendi officia quod modi numquam?
+					a(href="#").news__item-description-link Читать далее
+					.clearfix
+			.news__item 
+				h2.news__item-header Мёрси: Обзор базовых тактик
+				.news__item-image
+					img(src="../../img/news2.png")
+				.news__item-description
+					h4.news__item-description-header Ангела Циглер: формула идеального саппортинга
+					p.news__item-description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, adipisci sit. Corporis exercitationem dicta accusantium accusamus amet perspiciatis consequatur nulla excepturi rem, quibusdam itaque aut molestiae odio cupiditate inventore. Magni, aperiam officiis, asperiores perferendis ipsa omnis distinctio consequatur saepe, architecto facere veniam! Tempora aperiam id eligendi officia quod modi numquam?
+					a(href="#").news__item-description-link Читать далее
+					.clearfix
+			.news__item 
+				h2.news__item-header Короткометражка “Герой”.
+				.news__item-image
+						img(src="../../img/news3.png")
+				.news__item-description
+					p.news__item-description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, enim, architecto. Placeat temporibus qui tempore maxime ea possimus cumque eum.
+					a(href="#").news__item-description-link Читать далее
+					.clearfix
+		-}
+	ul.news__pagination._pagination.list-unstyled
+		li._pagination__item
+			a(href="#") &#171;
+		li._pagination__item._pagination__item-active
+			a(href="#") 1
+		li._pagination__item
+			a(href="#") 2
+		li._pagination__item
+			a(href="#") 3
+		li._pagination__item
+			a(href="#") 4
+		li._pagination__item
+			a(href="#") 5
+		li._pagination__item._pagination__item-dots ...
+		li._pagination__item
+			a(href="#") 11
+		li._pagination__item
+			a(href="#") &#187;
+

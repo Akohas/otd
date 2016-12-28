@@ -1,0 +1,130 @@
+.main-wrapper{
+	padding-top: 52px;
+}
+
+.news{
+	background: linear-gradient(to bottom, #fac8c2 4px, #fde9e7 70px, #fff 124px);
+	position: relative;
+	box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	font-family: Arial;
+	padding-bottom: 45px;
+	&__flag{
+		position: absolute;
+		left: 63px;
+		top: -4px;
+		&:after{
+			content: "";
+			background: url('../../img/red-flag.png') no-repeat;
+			padding: 4px 69px 73px 0px;
+		}
+		
+	}
+	&__flag svg{
+		width: 24px;
+		height: 20px;
+		position: absolute;
+    left: 12px;
+    top: 18px;
+	}
+	&__header{
+		padding-left: 125px;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 27px;
+		padding-top: 25px;
+		margin: 0;
+	}
+	&__items{
+		padding: 22px 57px 0 50px;
+		@media(max-width: 320px){
+			padding-top: 0;
+		}
+	}
+	&__item{
+		margin-top: 72px;
+	}
+	&__item-header{
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 27px;
+		position: relative;
+		margin: 0;
+		&:before{
+			content: "";
+			height: 40px;
+			width: 6px;
+			background-color: #ef4836;
+			position: absolute;
+			top: -4px;
+			left: -15px;
+		}
+	}
+	&__item-image{
+			text-align: center;
+			padding: 26px 0 24px;
+	}
+	&__item-image img{
+		width: 100%
+	}
+	&__item-description{
+		padding-left: 3px;
+	}
+	&__item-description-header{
+		font-weight: 700;
+		font-size: 18px;
+	}
+	&__item-description-text{
+		font-weight: 400;
+		font-size: 14px;
+	}
+	&__item-description-link{
+		float: right;
+		font-size: 16px;
+		text-decoration: underline;
+		font-weight: 400;
+	}
+	&__pagination{
+		margin-top: 62px;
+	}
+}
+
+._pagination{
+	margin-top: 63px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	&__item{
+		@media(max-width: 320px){
+			width: 25px;
+			height: 25px;
+		}
+		width: 30px;
+		height: 30px;
+		background-color: $red-color;
+		margin-left: 6px;
+		font-size: 20px;
+		font-weight: 700;
+		color: #ffffff;
+		vertical-align: middle;
+		border-radius: 5px 6px 6px 5px;
+		display: inline-block;
+		&:hover:not(._pagination__item-dots){
+			background-color: $blue-color;
+		}
+	}
+	&__item a{
+		color: #ffffff;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	&__item-active{
+		background-color: $blue-color;
+	}
+	&__item-dots{
+		background-color: #ffffff;
+		color: $red-color;
+		vertical-align: bottom;
+		height: 22px;
+	}
+}

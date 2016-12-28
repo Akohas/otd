@@ -1,0 +1,56 @@
+.pre-main-block{
+padding: 0 15px 0;
+	font-family: Arial;
+	&__search-block{
+		background-color: $blue-color;
+		border-radius: 14px;
+		padding: 12px 51px 12px 12px;
+		width: 288px;
+		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.74);
+		height: 57px;
+		margin-top: 33px;
+		position: relative;
+	}
+	&__search-field{
+		
+		border-radius: 9px;
+		outline: none;
+		border-style: none;
+		height: 34px;
+		padding-left: 10px;
+		width: 100%;
+			vertical-align: middle;
+		&::-webkit-search-cancel-button { 
+			-webkit-appearance: none; 
+		}
+	}
+	&__search-label svg{
+		width: 28px;
+		height: 28px;
+		position: absolute;
+    right: 12px;
+    top: 16px;
+		cursor: pointer;
+	}
+	&__check-in{
+		float: right;
+		text-align: right;
+	}
+	&__check-in-button{
+		width: 262px;
+		height: 58px;
+		border-radius: 14px;
+		background-color: $blue-color;
+		font-size: 28px;
+		color: #fff;
+		margin-top: 33px;
+		outline: none;
+		border-style: none;
+		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.74);
+	}
+
+}
+
+body{
+	background: url("../../img/background.png")
+}
