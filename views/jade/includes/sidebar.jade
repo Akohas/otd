@@ -2,17 +2,17 @@
 	.sidebar__flag
 		svg
 				use(xlink:href="#comments") 
+	.sidebar__header Комментарии
 	.sidebar__comments
 		- for(var i = 0; i< 6; i++){
 			.comments-block
 				a(href="#")
-					span.comments-block__username UserName
-					span.comments-block__description Тема новости/топика
+					span.comments-block__username nickName
+					span.comments-block__description Тема новости / топика
 					span.comments-block__time
 						svg
 							use(xlink:href="#arrow") 
 						span 12-июл-2016
-					.clearfix
 		- }
 	.sidebar__characters.characters-block
 		.characters-block__button-hide v
@@ -86,15 +86,19 @@
 
 	.sidebar__networks.networks-block
 		.networks-block__item.networks-block__vk
-			svg
-				use(xlink:href="#vk")
+			a(href="#")
+				svg
+					use(xlink:href="#vk")
 		.networks-block__item.networks-block__youtube
-			svg
-				use(xlink:href="#youtube") 
+			a(href="#")
+				svg
+					use(xlink:href="#youtube") 
 		.networks-block__item.networks-block__twitch
-			svg
-				use(xlink:href="#twitch")
+			a(href="#")
+				svg
+					use(xlink:href="#twitch")
 		.networks-block__item.networks-block__twitter
-			svg
-				use(xlink:href="#twitter")  
+			a(href="#")
+				svg
+					use(xlink:href="#twitter")  
 

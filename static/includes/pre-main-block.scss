@@ -4,11 +4,12 @@ padding: 0 15px 0;
 	&__search-block{
 		background-color: $blue-color;
 		border-radius: 14px;
-		padding: 12px 51px 12px 12px;
-		width: 288px;
+		padding: 12px 52px 12px 12px;
+		width: 286px;
 		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.74);
-		height: 57px;
-		margin-top: 33px;
+		height: 55px;
+		margin-top: 32px;
+		margin-left: -1px;
 		position: relative;
 	}
 	&__search-field{
@@ -16,37 +17,42 @@ padding: 0 15px 0;
 		border-radius: 9px;
 		outline: none;
 		border-style: none;
-		height: 34px;
-		padding-left: 10px;
+		height: 32px;
+		padding-left: 16px;
+    padding-top: 3px;
 		width: 100%;
+		font-size: 18px;
+		font-weight: 500;
 			vertical-align: middle;
 		&::-webkit-search-cancel-button { 
 			-webkit-appearance: none; 
 		}
 	}
-	&__search-label svg{
-		width: 28px;
-		height: 28px;
+	&__search-icon{
 		position: absolute;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.75);
     right: 12px;
-    top: 16px;
-		cursor: pointer;
+    top: 15px;
 	}
 	&__check-in{
 		float: right;
 		text-align: right;
 	}
 	&__check-in-button{
-		width: 262px;
-		height: 58px;
-		border-radius: 14px;
-		background-color: $blue-color;
-		font-size: 28px;
-		color: #fff;
-		margin-top: 33px;
-		outline: none;
-		border-style: none;
-		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.74);
+		width: 260px;
+    height: 55px;
+    border-radius: 14px;
+    background-color: #1968cc;
+    font-size: 28px;
+    color: #fff;
+    margin-left: -10px;
+    margin-right: 5px;
+    margin-top: 32px;
+    outline: none;
+    border-style: none;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.74);
 	}
 
 }

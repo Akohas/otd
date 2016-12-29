@@ -3,18 +3,25 @@
 	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 	font-family: Arial;
 	position: relative;
-	padding-top: 116px;
-	padding-bottom: 15px;
+	margin-left: -4px;
+	margin-right: 4px;
 	&__flag{
 		position: absolute;
 		left: 41px;
-		top: -4px;
+		top: -1px;
 		&:after{
 			content: "";
 			background: url('../../img/blue-flag.png') no-repeat;
 			padding: 4px 69px 73px 0px;
 		}
 		
+	}
+	&__header{
+		text-align: center;
+		font-size: 24px;
+		font-weight: 700;
+		padding-top: 16px;
+		margin: 0;
 	}
 	&__flag svg{
 		width: 24px;
@@ -24,8 +31,9 @@
     top: 18px;
 	}
 	&__comments{
-		padding-left: 42px;
+		padding-left: 44px;
 		padding-right: 31px;
+		margin-top: 63px;
 	}
 	&__characters{
 		margin-top:  30px;
@@ -37,8 +45,9 @@
 
 
 .comments-block{
+	@include clearfix;
 
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	& a{
 		color: #000;
 	&:hover{
@@ -56,6 +65,7 @@
 		font-weight: 400;
 		font-size: 18px;
 		display: block;
+		margin-top: -4px;
 	}
 	&__time{
 		color: #a1a1a1;
@@ -72,15 +82,15 @@
 
 .characters-block{
 	position: relative;
-	padding-top: 77px;
+	padding-top: 36px;
 	&__button-hide{
 		height: 60px;
-		background: url("../../img/characters-button.png") no-repeat 22px 0px, linear-gradient(to right, #225292 0%, #a0b6d1 36%, #fff 92%);
+		background: url("../../img/characters-button.png") no-repeat 22px 3px, linear-gradient(to right, #225292 0%, #a0b6d1 36%, #fff 92%);
 		width: 100%;
     left: -4px;
-    top: 0;
-    position: absolute;
-		padding-left: 103px;
+    position: relative;
+		padding-left: 99px;
+		margin-bottom: 18px;
     padding-top: 7px;
     font-size: 31px;
     font-weight: 700;
@@ -91,6 +101,9 @@
 	&__image{
 		position: relative;
 		margin-bottom: 5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 		display: block;
 		background-color: #000;
 		font-size: 0;
@@ -105,20 +118,25 @@
 	}
 	&__description{
 		position: absolute;
-		left: 40px;
+		left: 37px;
 		font-size: 14px;
 		font-weight: 700;
 		color: #fff;
-		line-height: 25px;
+		line-height: 24px;
 	}
 }
 
 
 .networks-block{
 	text-align: center;
+	margin-top: 20px;
+  padding-bottom: 20px;
 	&__item{
 		display: inline-block;
-		margin: 0 10px;
+		margin-left: 17px;
+		&:first-child{
+			margin-left: 0px;
+		}
 	}
 	&__item svg{
 		width: 20px;
@@ -129,12 +147,12 @@
 		}
 	}
 	&__vk svg{
-		width: 26px;
-		height: 19px;
+		width: 27px;
+		height: 22px;
 	}
 	&__twitter svg{
 		width: 22px;
-		height: 18px;
+		height: 22px;
 	}
 	&__twitch svg{
 		width: 22px;
